@@ -13,7 +13,6 @@ public class Chat_RC4 extends SingleFrameApplication {
 
     Socket socketCliente;
     Chat_RC4Application1View view;
-    String host = "localhost";
     int porta = 22222;
     String chave;
 

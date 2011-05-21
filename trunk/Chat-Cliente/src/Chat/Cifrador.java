@@ -48,11 +48,8 @@ public class Cifrador {
 			temp = (char) sbox[i];
 			sbox[i] = sbox[j];
 			sbox[j] = temp;
-			//Faz toda essa misturada para pegar um numero randômico e fazer um xor com a mensagem original.
 			t = (sbox[i] + sbox[j]) % 256;
-			// get the random byte
 			k = (char) sbox[t];
-			// xor with the data and done
 			input.setCharAt(x, (char) (input.charAt(x) ^ k));
 		}
 	}
